@@ -1,0 +1,2 @@
+UPLOAD_FOLDER = 'static'
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER

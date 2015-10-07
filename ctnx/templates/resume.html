@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}CuongTran{% endblock %}
+{% block links %}
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/custom.min.css') }}">
+{% endblock %}
+{% block content %}
+    <div class="cv">
+        <div class="cv-header">
+            {% include 'resume_header.html' %}
+        </div>
+        <div class="cv-main">
+            {% include 'resume_projects.html'%}
+            {% include 'resume_skills.html' %}
+            {% include 'resume_exp.html' %}
+            {% include 'resume_education.html' %}
+            {% include 'resume_contact.html' %}
+            {% include 'resume_interests.html' %}
+            <div class="clear-context"></div>
+        </div>
+        <div class="space"></div>
+    </div>
+{% endblock %}
