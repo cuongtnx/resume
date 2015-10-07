@@ -1,4 +1,4 @@
-from ctnx import app
+from resume import app
 
 
 if __name__ == '__main__':
