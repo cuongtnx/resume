@@ -1,7 +1,7 @@
 # Site settings
-title:       CTNX
-email:       ctn0007@gmail.com
+title:       CuongTn Resume
+email:       cuongtran92@gmail.com
 author:      Cuong Tran
 description: "CTN's blog"
 baseurl:     ""
-url:         "http://ctnx.github.io"
+url:         "http://cuongtnx.github.io/resume"
