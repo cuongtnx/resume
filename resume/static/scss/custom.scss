@@ -129,7 +129,7 @@ body {
 
 .cv-samples {
     @extend .cv-content;
-    width: 35%;
+    width: 25%;
     float: left;
     margin-right: 5%;
 
@@ -147,29 +147,9 @@ body {
     }
 }
 
-.cv-education {
-    @extend .cv-content;
-    float: left;
-    width: 60%;
-
-    p {
-        margin-top: 0.2em;
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    a:hover {
-        text-decoration: none;
-        color: gray;
-    }
-}
-
 .cv-technical-skills {
     @extend .cv-content;
-    width: 40%;
+    width: 70%;
     float: left;
 
     .cv-skill-group {
@@ -190,7 +170,35 @@ body {
 .cv-working-experiences {
     @extend .cv-content;
     float: right;
-    width: 60%;
+    width: 70%;
+}
+
+.cv-education {
+    @extend .cv-content;
+    float: left;
+    width: 25%;
+    margin-right: 5%;
+
+    p {
+        margin-top: 0.2em;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: gray;
+    }
+}
+
+.cv-interests {
+    @extend .cv-content;
+    width: 25%;
+    margin-right: 5%;
+    float: left;
 }
 
 .cv-contact {
@@ -345,7 +353,7 @@ body {
 
     body {
         padding: 0;
-        font-size: 20pt;
+        font-size: 18pt;
     }
 
     .cv {
@@ -359,23 +367,25 @@ body {
     }
 
     .cv-main {
-        margin-right: 0%;
+        margin-right: 10%;
     }
 
     .cv-header {
-        height: 300px;
+        height: 250px;
 
+        .cv-header-container {
+            padding-top: 2%;
+        }
         .cv-firstname {
-            @include font-header(75pt);
+            @include font-header(70pt);
         }
 
         .cv-lastname {
-            @include font-header(48pt);
+            @include font-header(40pt);
         }
 
         .cv-link {
             .cv-link-img {
-
                 margin-right: 15px;
                 img {
                     width: 30pt;
@@ -392,15 +402,18 @@ body {
 
     .cv-content {
         h2 {
-            font-size: 26pt;
+            font-size: 24pt;
         }
 
         h3 {
-            font-size: 20pt;
+            font-size: 18pt;
         }
 
         a {
             text-decoration: none;
+        }
+
+        a:visited {
             color: blue;
         }
     }
@@ -410,47 +423,47 @@ body {
     }
 
     .cv-samples {
-        position: absolute;
-        top: 300px;
-        left: 50px;
-        width: 350px;
+        width: 30%;
+        margin-right: 5%
     }
 
     .cv-technical-skills {
-        position: absolute;
-        top: 730px;
-        left: 50px;
-        width: 350px;
+        width: 65%;
+    }
 
-        .cv-skill-group {
-            padding-right: 0;
+    .cv-education {
+        width: 30%;
+        margin-right: 5%
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:visited {
+            color: black;
         }
     }
 
+    .cv-interests {
+        width: 30%;
+        margin-right: 5%
+    }
+
+    .cv-working-experiences {
+        width: 65%;
+    }
+
     .cv-contact {
-        position: absolute;
-        top: 1360px;
-        width: 350px;
+        width: 25%;
+        margin-right: 5%;
+        float: left;
+
         .cv-contact-details {
             width: 100%;
         }
     }
 
-    .cv-working-experiences {
-        position: absolute;
-        top: 300px;
-        left: 450px;
-    }
-
-    .cv-education {
-        position: absolute;
-        top: 1360px;
-        left: 450px;
-
-        a {
-            color: black;
-        }
-    }
 
     .cv-print-hide {
         display: none;
