@@ -1,6 +1,5 @@
 import os
 
-
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def parent_dir(path):
@@ -10,5 +9,5 @@ def parent_dir(path):
 
 PROJECT_ROOT = parent_dir(APP_DIR)
 
-FREEZER_DESTINATION = PROJECT_ROOT
-FREEZER_REMOVE_EXTRA_FILES = False
+# config for Freezer
+FREEZER_BASE_URL = PROJECT_ROOT
