@@ -371,7 +371,6 @@ body {
     }
 
     .cv-header {
-        background-color: white;
         height: 250px;
 
         .cv-header-container {
@@ -379,12 +378,10 @@ body {
         }
         .cv-firstname {
             @include font-header(70pt);
-            color: black;
         }
 
         .cv-lastname {
             @include font-header(40pt);
-            color: black;
         }
 
         .cv-link {
@@ -399,8 +396,6 @@ body {
                 a {
                     font-size: 26pt;
                 }
-
-                color: black;
             }
         }
     }
