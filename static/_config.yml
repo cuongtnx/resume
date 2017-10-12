@@ -1,0 +1,7 @@
+# Site settings
+title:       CTNX
+email:       ctn0007@gmail.com
+author:      Cuong Tran
+description: "CTN's blog"
+baseurl:     ""
+url:         "http://ctnx.github.io"
