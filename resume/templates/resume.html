@@ -6,18 +6,18 @@
 {% block content %}
     <div class="cv">
         <div class="cv-header">
-            {% include 'resume_header.html' %}
+            {% include 'partials/_header.html' %}
         </div>
         <div class="cv-main">
-            {% include 'resume_summary.html'%}
+            {% include 'contents/_summary.html'%}
             <div class="clear-context"></div>
-            {% include 'resume_projects.html'%}
-            {% include 'resume_skills.html' %}
+            {% include 'contents/_projects.html'%}
+            {% include 'contents/_skills.html' %}
             <div class="clear-context"></div>
-            {% include 'resume_exp.html' %}
-            {% include 'resume_education.html' %}
-            {% include 'resume_interests.html' %}
-            {% include 'resume_contact.html' %}
+            {% include 'contents/_exp.html' %}
+            {% include 'contents/_education.html' %}
+            {% include 'contents/_interests.html' %}
+            {% include 'contents/_contact.html' %}
             <div class="clear-context"></div>
         </div>
         <div class="space"></div>
